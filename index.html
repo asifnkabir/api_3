@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Users</title>
+    <style>
+      #users {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+      }
+      .user {
+        border: 2px solid greenyellow;
+        border-radius: 8px;
+        padding: 20px;
+      }
+
+      @media screen and (max-width: 600px) {
+        #users {
+          display: block;
+          margin: 20px;
+        }
+
+        .user {
+          margin: 20px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Show All Users</h1>
+
+    <div id="users"></div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
